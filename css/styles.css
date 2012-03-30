@@ -298,8 +298,7 @@ footer
 	position: relative;
 	height: 90px;
 	clear: both;
-	width: 100%;
-	/*background-image: url(../images/footer.png);*/
+	width: 100%; /*background-image: url(../images/footer.png);*/
 	background-position: left top;
 	background-repeat: repeat-x;
 	margin-bottom: 18px;
@@ -442,18 +441,17 @@ nav ul li a.current
 	font-size: 100px;
 	text-transform: uppercase;
 	color: #666;
-	text-shadow: 0px 2px 3px #AAA;
-	/*background-color: #ccc;*/
-	padding-right: 10px
+	text-shadow: 0px 2px 3px #AAA; /*background-color: #ccc;*/
+	padding-right: 10px;
 }
 
 #intro h1:before
 {
-	content: '\201C'; 
+	content: '\201C';
 }
 #intro h1:after
 {
-	content: '\201D'; 
+	content: '\201D';
 }
 
 
@@ -492,3 +490,4 @@ nav ul li a.current
 	position: relative;
 	top: 1px;
 }
+
