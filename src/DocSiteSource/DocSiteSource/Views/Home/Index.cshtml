@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>RazorPad Documentation</title>
-    <link rel="icon" href="images/favicon.gif" type="image/x-icon" />
-    <!--[if lt IE 9]>
- <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-    <link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon" />
-    <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
-    <link href="/styles/grid.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <div class="container_12">
-        <header class="bg">
-            <div class="grid_4">
-                <h1>
-                    <a href="http://docs.razorpad.net">
-                        <img src="images/textLogo.png" width="287" height="35" alt="RazorPad" /></a>
-                </h1>
-            </div>
-            <div class="grid_8">
-                <nav>
-                    <ul>
-                        <li><a href="docs.html">Docs</a></li>
-                        <li><a href="examples.html">Examples</a></li>
-                        <li><a href="http://razorpad.net">Try it!</a></li>
-                        <li><a href="#">The Team</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="container_12">
-            <section id="intro" class="container_12">
+﻿<section id="intro" class="container_12">
     <div class="grid_4">
         <img src="../../images/ninja-fog.png" />
     </div>
@@ -80,17 +46,44 @@
         <a href="#"><span class="button">Read more</span></a>
     </section>
 
-    
+    @* 
+    TODO: Uncomment once layout feels solid
+    <section class="group4">
+        <div class="grid_5">
+            <h3>
+                Latest article</h3>
+            <div class="">
+                <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+                <script>
+                    new TWTR.Widget({
+                        version: 2,
+                        type: 'search',
+                        search: '@@scottgu OR #razorpad',
+                        interval: 60000,
+                        title: 'What people are saying...',
+                        subject: '',
+                        width: 'auto',
+                        height: 200,
+                        theme: {
+                            shell: {
+                                background: '#9a9b9c',
+                                color: '#ffffff'
+                            },
+                            tweets: {
+                                background: '#f0f0f0',
+                                color: '#3f4447',
+                                links: '#426675'
+                            }
+                        },
+                        features: {
+                            scrollbar: true,
+                            loop: true,
+                            live: true,
+                            behavior: 'default'
+                        }
+                    }).render().start();
+                </script>
+            </div>
+        </div>
+    </section>*@
 </div>
-
-        </section>
-        <footer class="grid_12">
-            <div class="grid_6">
-                © 2011 RazorPad
-            </div>
-            <div class="grid_6 omega">
-            </div>
-        </footer>
-    </div>
-</body>
-</html>

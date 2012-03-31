@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>RazorPad Documentation</title>
+    <link rel="icon" href="images/favicon.gif" type="image/x-icon" />
+    <!--[if lt IE 9]>
+ <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <link rel="shortcut icon" href="images/favicon.gif" type="image/x-icon" />
+    <link href="@Url.Content("~/styles/styles.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/styles/grid.css")" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container_12">
+        <header class="bg">
+            <div class="grid_4">
+                <h1>
+                    <a href="http://docs.razorpad.net">
+                        <img src="images/textLogo.png" width="287" height="35" alt="RazorPad" /></a>
+                </h1>
+            </div>
+            <div class="grid_8">
+                <nav>
+                    <ul>
+                        <li><a href="docs.html">Docs</a></li>
+                        <li><a href="examples.html">Examples</a></li>
+                        <li><a href="http://razorpad.net">Try it!</a></li>
+                        <li><a href="#">The Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="container_12">
+            @RenderBody()
+        </section>
+        <footer class="grid_12">
+            <div class="grid_6">
+                © 2011 RazorPad
+            </div>
+            <div class="grid_6 omega">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
