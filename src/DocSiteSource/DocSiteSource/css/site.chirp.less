@@ -280,73 +280,196 @@ nav {
 
 /************* Markdown Sections **************/
 .md {
-h1, h2, h3, h4 {
-    color: #111111;
-    font-weight: 400;
+  font-size:14px;
+  line-height:1.6;
+  h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+    font-size:inherit;
+  }
+  > h2:first-child, > h1:first-child, > h1:first-child + h2, > h3:first-child, > h4:first-child, > h5:first-child, > h6:first-child {
+    margin-top:0;
+    padding-top:0;
+  }
+  ul, ol {
+    padding-left:30px;
+  }
+  code, tt {
+    white-space:nowrap;
+    border:1px solid #eaeaea;
+    background-color:#f8f8f8;
+    border-radius:3px;
+    margin:0 2px;
+    padding:0 5px;
+  }
+  .highlight pre, pre {
+    background-color:#f8f8f8;
+    border:1px solid #cccccc;
+    font-size:13px;
+    line-height:19px;
+    overflow:auto;
+    border-radius:3px;
+    padding:6px 10px;
+  }
+  a.absent {
+    color:#cc0000;
+  }
+  h1 {
+    font-weight:700;
+    -webkit-font-smoothing:antialiased;
+    margin:20px 0 10px;
+    padding:0;
+    font-size:28px;
+    color:#000000;
+  }
+  h2 {
+    font-weight:700;
+    -webkit-font-smoothing:antialiased;
+    margin:20px 0 10px;
+    padding:0;
+    font-size:24px;
+    border-bottom:1px solid #cccccc;
+    color:#000000;
+  }
+  h3 {
+    font-weight:700;
+    -webkit-font-smoothing:antialiased;
+    margin:20px 0 10px;
+    padding:0;
+    font-size:18px;
+  }
+  h4 {
+    font-weight:700;
+    -webkit-font-smoothing:antialiased;
+    margin:20px 0 10px;
+    padding:0;
+    font-size:16px;
+  }
+  h5 {
+    font-weight:700;
+    -webkit-font-smoothing:antialiased;
+    margin:20px 0 10px;
+    padding:0;
+  }
+  h6 {
+    font-weight:700;
+    -webkit-font-smoothing:antialiased;
+    margin:20px 0 10px;
+    padding:0;
+    color:#777777;
+    font-size:14px;
+  }
+  hr {
+    background:transparent url(../../images/modules/pulls/dirty-shade.png) repeat-x 0 0;
+    border:0 none;
+    color:#cccccc;
+    height:4px;
+    padding:0;
+  }
+  dl dt {
+    font-size:14px;
+    font-weight:700;
+    font-style:italic;
+    margin:15px 0 5px;
+    padding:0;
+  }
+  dl dd {
+    margin:0 0 15px;
+    padding:0 15px;
+  }
+  blockquote {
+    border-left:4px solid #dddddd;
+    color:#777777;
+    padding:0 15px;
+  }
+  table tr {
+    border-top:1px solid #cccccc;
+    background-color:#ffffff;
+    margin:0;
+    padding:0;
+    th, td {
+      border:1px solid #cccccc;
+      text-align:left;
+      margin:0;
+      padding:6px 13px;
+    }
+  }
+  table tr:nth-child(2n) {
+    background-color:#f8f8f8;
+  }
+  span.frame {
+    display:block;
+    overflow:hidden;
+    > span {
+      border:1px solid #dddddd;
+      display:block;
+      float:left;
+      overflow:hidden;
+      width:auto;
+      margin:13px 0 0;
+      padding:7px;
+    }
+    span img {
+      display:block;
+      float:left;
+    }
+    span span {
+      clear:both;
+      color:#333333;
+      display:block;
+      padding:5px 0 0;
+    }
+  }
+  span.align-center > span {
+    display:block;
+    overflow:hidden;
+    text-align:center;
+    margin:13px auto 0;
+  }
+  span.align-center span img {
+    text-align:center;
+    margin:0 auto;
+  }
+  span.align-right > span {
+    display:block;
+    overflow:hidden;
+    text-align:right;
+    margin:13px 0 0;
+  }
+  span.align-right span img {
+    text-align:right;
+    margin:0;
+  }
+  span.float-left {
+    display:block;
+    margin-right:13px;
+    overflow:hidden;
+    float:left;
+    span {
+      margin:13px 0 0;
+    }
+  }
+  span.float-right {
+    display:block;
+    margin-left:13px;
+    overflow:hidden;
+    float:right;
+    > span {
+      display:block;
+      overflow:hidden;
+      text-align:right;
+      margin:13px auto 0;
+    }
+  }
+  pre {
+    code, tt {
+      background-color:transparent;
+      border:none;
+    }
+    > code {
+      white-space:pre;
+      border:none;
+      background:transparent;
+      margin:0;
+      padding:0;
+    }
+  }
 }
-h1, h2, h3, h4, h5, p {
-    margin-bottom: 24px;
-    padding: 0;
-}
-h1 {
-    font-size: 48px;
-}
-h2 {
-    font-size: 36px;
-    margin: 24px 0 6px;
-}
-h3 {
-    font-size: 24px;
-}
-h4 {
-    font-size: 21px;
-}
-h5 {
-    font-size: 18px;
-}
-a {
-    color: #0099ff;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
-}
-ul, ol {
-    padding: 0;
-    margin: 0;
-}
-li {
-    line-height: 24px;
-}
-p, ul, ol {
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 540px;
-}
-pre {
-    padding: 0px 24px;
-}
-code {
-    font-family: Consolas, Monaco, Andale Mono, monospace;
-    line-height: 1.5;
-}
-aside {
-    display: block;
-    float: right;
-    width: 390px;
-}
-blockquote {
-    margin: 1em 2em;
-    max-width: 476px;
-}
-blockquote p {
-    color: #666;
-    max-width: 460px;
-}
-hr {
-    width: 540px;
-    text-align: left;
-    margin: 0 auto 0 0;
-    color: #999;
-}
-}
-

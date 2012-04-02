@@ -316,79 +316,212 @@ nav ul li a.current {
   float: left;
 }
 /************* Markdown Sections **************/
-.md h1,
-.md h2,
-.md h3,
-.md h4 {
-  color: #111111;
-  font-weight: 400;
+.md {
+  font-size: 14px;
+  line-height: 1.6;
 }
-.md h1,
-.md h2,
-.md h3,
-.md h4,
-.md h5,
-.md p {
-  margin-bottom: 24px;
-  padding: 0;
+.md h1 tt,
+.md h1 code,
+.md h2 tt,
+.md h2 code,
+.md h3 tt,
+.md h3 code,
+.md h4 tt,
+.md h4 code,
+.md h5 tt,
+.md h5 code,
+.md h6 tt,
+.md h6 code {
+  font-size: inherit;
 }
-.md h1 {
-  font-size: 48px;
-}
-.md h2 {
-  font-size: 36px;
-  margin: 24px 0 6px;
-}
-.md h3 {
-  font-size: 24px;
-}
-.md h4 {
-  font-size: 21px;
-}
-.md h5 {
-  font-size: 18px;
-}
-.md a {
-  color: #0099ff;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
+.md > h2:first-child,
+.md > h1:first-child,
+.md > h1:first-child + h2,
+.md > h3:first-child,
+.md > h4:first-child,
+.md > h5:first-child,
+.md > h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
 }
 .md ul, .md ol {
+  padding-left: 30px;
+}
+.md code, .md tt {
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  margin: 0 2px;
+  padding: 0 5px;
+}
+.md .highlight pre, .md pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  border-radius: 3px;
+  padding: 6px 10px;
+}
+.md a.absent {
+  color: #cc0000;
+}
+.md h1 {
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  margin: 20px 0 10px;
   padding: 0;
-  margin: 0;
+  font-size: 28px;
+  color: #000000;
 }
-.md li {
-  line-height: 24px;
+.md h2 {
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  margin: 20px 0 10px;
+  padding: 0;
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: #000000;
 }
-.md p, .md ul, .md ol {
+.md h3 {
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  margin: 20px 0 10px;
+  padding: 0;
+  font-size: 18px;
+}
+.md h4 {
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  margin: 20px 0 10px;
+  padding: 0;
   font-size: 16px;
-  line-height: 24px;
-  max-width: 540px;
 }
-.md pre {
-  padding: 0px 24px;
+.md h5 {
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  margin: 20px 0 10px;
+  padding: 0;
 }
-.md code {
-  font-family: Consolas, Monaco, Andale Mono, monospace;
-  line-height: 1.5;
-}
-.md aside {
-  display: block;
-  float: right;
-  width: 390px;
-}
-.md blockquote {
-  margin: 1em 2em;
-  max-width: 476px;
-}
-.md blockquote p {
-  color: #666;
-  max-width: 460px;
+.md h6 {
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  margin: 20px 0 10px;
+  padding: 0;
+  color: #777777;
+  font-size: 14px;
 }
 .md hr {
-  width: 540px;
+  background: transparent url(../../images/modules/pulls/dirty-shade.png) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+.md dl dt {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  margin: 15px 0 5px;
+  padding: 0;
+}
+.md dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+.md blockquote {
+  border-left: 4px solid #dddddd;
+  color: #777777;
+  padding: 0 15px;
+}
+.md table tr {
+  border-top: 1px solid #cccccc;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.md table tr th, .md table tr td {
+  border: 1px solid #cccccc;
   text-align: left;
-  margin: 0 auto 0 0;
-  color: #999;
+  margin: 0;
+  padding: 6px 13px;
+}
+.md table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+.md span.frame {
+  display: block;
+  overflow: hidden;
+}
+.md span.frame > span {
+  border: 1px solid #dddddd;
+  display: block;
+  float: left;
+  overflow: hidden;
+  width: auto;
+  margin: 13px 0 0;
+  padding: 7px;
+}
+.md span.frame span img {
+  display: block;
+  float: left;
+}
+.md span.frame span span {
+  clear: both;
+  color: #333333;
+  display: block;
+  padding: 5px 0 0;
+}
+.md span.align-center > span {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  margin: 13px auto 0;
+}
+.md span.align-center span img {
+  text-align: center;
+  margin: 0 auto;
+}
+.md span.align-right > span {
+  display: block;
+  overflow: hidden;
+  text-align: right;
+  margin: 13px 0 0;
+}
+.md span.align-right span img {
+  text-align: right;
+  margin: 0;
+}
+.md span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left;
+}
+.md span.float-left span {
+  margin: 13px 0 0;
+}
+.md span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right;
+}
+.md span.float-right > span {
+  display: block;
+  overflow: hidden;
+  text-align: right;
+  margin: 13px auto 0;
+}
+.md pre code, .md pre tt {
+  background-color: transparent;
+  border: none;
+}
+.md pre > code {
+  white-space: pre;
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 0;
 }
