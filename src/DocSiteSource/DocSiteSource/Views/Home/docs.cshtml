@@ -1,0 +1,89 @@
+﻿<h1>RazorPad Documentation</h1>
+
+<p>RazorPad is an online editor to play with Html Views written using Razor syntax. This is a scratch pad to experiment with code snippets, before running in your full fledged project.</p>
+
+<p>It is also meant to help learn the Razor engine and its internals. Once you understand the innards of Razor engine, you'll discover that Razor engine is not just limited to ASP.NET MVC world. You can host Razor engine in any .Net project to leverage its strongly typed template parsing abilities and even extend it to create elegant solutions for your templating problems.    </p>
+
+<p>The idea of RazorPad is inspired from other snippet editors such LinqPad and jsFiddle.</p>
+
+<p>If you are familiar with ASP.NET MVC, then the editor is essentially your cshtml/vbhtml file.  </p>
+
+<h2>Basic Usage</h2>
+
+<p>RazorPad is divided into 2 panes- View pane and the Results pane and a sidebar. While we have taken care to make them as intuitive as possible, the following sections will you take you through them in detail.</p>
+
+<h3>View Pane</h3>
+
+<p>The view pane lets you create your template using Razor syntax. You can declare variables, Model and its properties to use them in the markup as you would in any normal ASP.NET MVC view.  </p>
+
+<p>After entering your markup in the view pane, hit <code>Execute</code> to see the output in Results Pane.</p>
+
+<p>You can add styles to your markup and the results pane will apply the styles to the output.</p>
+
+<p>You can also enter script tags, however, any code inside them will not be executed. They will simple be rendered as plain text. </p>
+
+<h3>Results Pane</h3>
+
+<p>The results pane contains 5 tabs:</p>
+
+<ul>
+<li>Browser View</li>
+<li>Html Source View</li>
+<li>Parser Results</li>
+<li>Generated Code</li>
+<li>Messages</li>
+</ul>
+
+<h4>Browser View</h4>
+
+<p>If your template is valid, then you would see the output as it would appear in a browser.<br />
+Any styles in the markup will be applied to the output. The only exception are script tags. Script tags will be rendered as plain text and the javascript in them will not be executed.</p>
+
+<p>If you need to see the javascript in action, you can copy the Html source of the rendered markup and try it out in <a href="http://jsfiddle.net">jsFiddle</a>.</p>
+
+<h4>Html Source View</h4>
+
+<p>If your template is valid, then you would see the Html source of the rendered markup here. This is essentially doing a "View Source" on the browser view. </p>
+
+<h4>Parser Results</h4>
+
+<p>This tab and the Generated Code are quite interesting. This shows the output after Razor engine has analyzed and parsed your view markup. Parsing the template text or the view markup is the first step towards compiling your view.
+The parsed results appear as a Xml Tree, with each node representing a section of the view markup. The Xml tree will contain text and code expressions, as it would appear in your template. </p>
+
+<h4>Generated Code</h4>
+
+<p>Once Razor engine has parsed the template, the next step is to generate a .Net class out of the parsed results. 
+This compiled class is what ASP.NET uses to render the HTML response to the browser. 
+When you compile your ASP.NET MVC project, you normally don't see this class (as a file) anywhere in the final output, since it is discarded once the assembly is built.
+The Generated code tab shows you exactly what the class looks like.</p>
+
+<h4>Messages</h4>
+
+<p>Messages tab shows any error messages that get generated during any of the stages of parsing the template to rendering it down. 
+This is a catch all tab for any and all error messages. </p>
+
+<p>Upon Execute, if you see the Browser View or Html Source View empty, it generally means there was an error at some point. 
+Messages tab will contain detailed error information along with line number of relevant document (if applicable).</p>
+
+<h2>Advanced Usage</h2>
+
+<p>Beyond the simple scenario of writing a Razor template and executing it, RazorPad, can supports few more advanced scenarios. </p>
+
+<h3>Sharing your snippets</h3>
+
+<p>You can save your Razor snippets by clicking Save. 
+Your snippet is assigned a unique id and the Url is updated with the unique id. </p>
+
+<p>To access your snippet at a later time, simply copy/paste this Url in a browser.</p>
+
+<h3>Saving your snippets and accessing them later</h3>
+
+<p>Optionally, you can sign in/sign up which allows you to save your snippets under your login.
+You can use your existing Facebook, Google or Open Id account to sign in your you can sign up for a RazorPad account.
+RazorPad doesn't use your email address for anything other than authentication to the site. </p>
+
+<p>You can access all your saved snippets anytime under "My Snippets"{TODO: Needs expansion, review}.</p>
+
+<h3>Cloning your snippets</h3>
+
+<p>{TODO}</p>
