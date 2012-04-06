@@ -525,3 +525,19 @@ nav ul li a.current {
   margin: 0;
   padding: 0;
 }
+.graphic {
+  background-position: 0 0;
+  width: 296px;
+  height: 170px;
+  background-image: url(@spriteUrl);
+  background-repeat: no-repeat;
+}
+header h1 > a {
+  background-position: 0 -220px;
+  background-repeat: no-repeat;
+  width: 287px;
+  height: 35px;
+  background-image: url(@spriteUrl);
+  display: block;
+  line-height: 35px;
+}

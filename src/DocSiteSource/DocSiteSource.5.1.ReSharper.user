@@ -1,0 +1,40 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="1319A974-6E8A-46FB-AC11-0DA7B0ED727F/d:Views/d:Home/f:docs.cshtml" caret="0" fromTop="0" />
+      <File id="1319A974-6E8A-46FB-AC11-0DA7B0ED727F/d:css/f:site.chirp.less" caret="8551" fromTop="8" />
+      <File id="1319A974-6E8A-46FB-AC11-0DA7B0ED727F/d:css/f:site.min.css" caret="2577" fromTop="29" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="1319A974-6E8A-46FB-AC11-0DA7B0ED727F/d:css/f:site.chirp.less" caret="8551" fromTop="8" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:System.Web.Routing.RouteCollection">
+      <Item value="RouteExistingFiles" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Default">
+      <Item value="true" priority="0" />
+      <Item value="new" priority="0" />
+      <Item value="object" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

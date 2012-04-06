@@ -75,7 +75,9 @@
     <Content Include="Global.asax" />
     <Content Include="images\bg.png" />
     <Content Include="images\fog.png" />
+    <Content Include="images\ninja-fog.png" />
     <Content Include="images\ninja.png" />
+    <Content Include="images\site.png" />
     <Content Include="images\textLogo.png" />
     <Content Include="scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="scripts\jquery-1.7.1.js" />
@@ -108,11 +110,20 @@
     <Content Include="Views\Home\docs.cshtml">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>docs.cshtml_md</DependentUpon>
+      <DependentUpon>docs.cshtml.md</DependentUpon>
     </Content>
-    <None Include="Views\Home\docs.cshtml_md">
+    <None Include="Views\Home\docs.cshtml.md">
       <Generator>Markdown</Generator>
       <LastGenOutput>docs.cshtml</LastGenOutput>
+    </None>
+    <Content Include="Views\Home\examples.cshtml">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>examples.cshtml.md</DependentUpon>
+    </Content>
+    <None Include="Views\Home\examples.cshtml.md">
+      <Generator>Markdown</Generator>
+      <LastGenOutput>examples.cshtml</LastGenOutput>
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

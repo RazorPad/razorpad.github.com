@@ -21,5 +21,10 @@ namespace DocSiteSource.Controllers
             return View();
         }
 
+		public ActionResult Examples()
+		{
+			return View();
+		}
+
     }
 }
